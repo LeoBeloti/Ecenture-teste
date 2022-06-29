@@ -21,26 +21,26 @@ return new class extends Migration
             $table->string('product_URL');
             $table->float('price');
             $table->float('retail_price');
+            $table->string('child_price')->nullable();
             $table->string('thumbnail_URL');
-            $table->string('search_keywords');
+            $table->string('search_keywords')->nullable();
             $table->string('description');
             $table->string('brand');
-            $table->string('child_sku');
-            $table->string('child_price');
+            $table->string('child_sku')->nullable();
             $table->string('color');
             $table->string('color_family');
-            $table->string('color_swatches');
-            $table->string('size');
-            $table->string('shoe_size');
-            $table->string('pants_size');
-            $table->string('occasion');
-            $table->string('season');
-            $table->string('bagdes');
+            $table->string('color_swatches')->nullable();
+            $table->string('size')->nullable();
+            $table->string('shoe_size')->nullable();
+            $table->string('pants_size')->nullable();
+            $table->string('occassion')->nullable();
+            $table->string('season')->nullable();
+            $table->string('badges')->nullable();
             $table->float('rating_avg');
             $table->float('rating_count');
             $table->float('inventory_count');
         
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->foreign('category_id')->references('id')->on('users');
             
             $table->timestamps();

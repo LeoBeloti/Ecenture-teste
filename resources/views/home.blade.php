@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card text-center">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
@@ -13,9 +13,14 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <a href="#" class="">Criar Produtos</a>
-                    <a href="#">Listar Produtos</a>
+                    <div>
+                        <a href="{{route('admin.register')}}" class="">Criar Produtos</a> - 
+                        <a href="{{route('admin.index')}}">Listar Produtos</a><br>
+                    </div>
+                    <div>
+                        <a href="{{route('admin.category.create')}}">Cadastrar Categoria</a> - 
+                        <a href="{{route('admin.category.index')}}">Listar Categorias</a>
+                    </div>
                 </div>
             </div>
         </div>
