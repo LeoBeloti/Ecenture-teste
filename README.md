@@ -6,8 +6,8 @@
 - Configurar um banco de dados no .env.exemple
 - Renomear o arquivo .env.exemple para .env
 - Rodar os seguintes comandos no terminal:
--- composer install
--- npm install && npm run dev
+- composer install
+- npm install && npm run dev
 - Iniciar o servidor com o comando: php artisan serve
 
 
