@@ -8,6 +8,7 @@
 - Rodar os seguintes comandos no terminal:
 - composer install
 - npm install && npm run dev
+- rodar o comando: php artisan migrate
 - Iniciar o servidor com o comando: php artisan serve
 
 
